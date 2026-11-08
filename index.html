@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VendingAparati018 | Aparati za kafu i vending aparati – Niš</title>
+<meta name="description" content="VendingAparati018 – samouslužni aparati za kafu, tople i hladne napitke i grickalice u Nišu. Postavljanje, redovna dopuna i servis 24/7.">
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&subset=latin-ext&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#pocetna" class="brand" data-tab="pocetna">
+      <img src="img/logo.png" alt="VendingAparati018 logo" class="brand-logo">
+      <span class="brand-name">VendingAparati<b>018</b></span>
+    </a>
+    <a href="tel:+381611181580" class="header-phone">061/118-1580</a>
+  </div>
+  <nav class="tabs" aria-label="Glavna navigacija">
+    <div class="wrap tabs-inner" role="tablist">
+      <a href="#pocetna" role="tab" data-tab="pocetna">Početna</a>
+      <a href="#o-nama" role="tab" data-tab="o-nama">O nama</a>
+      <a href="#kafe-aparati" role="tab" data-tab="kafe-aparati">Kafe aparati</a>
+      <a href="#vending-aparati" role="tab" data-tab="vending-aparati">Vending aparati</a>
+      <a href="#kontakt" role="tab" data-tab="kontakt">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ POČETNA ============ -->
+<section class="panel" id="pocetna" role="tabpanel">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Niš · samouslužni aparati</p>
+        <h1>Kafa, osveženje i grickalice — uvek na dohvat ruke.</h1>
+        <p class="lead">Postavljamo, dopunjavamo i servisiramo aparate za kafu, tople i hladne napitke i grickalice u kompanijama, školama, teretanama i drugim prostorima.</p>
+        <div class="hero-actions">
+          <a href="#upit" class="btn btn-primary">Pošaljite upit</a>
+          <a href="#o-nama" class="btn btn-ghost" data-tab="o-nama">Više o nama</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="img/hero.jpg" alt="Korišćenje vending aparata" class="hero-img">
+        <img src="img/zrna.png" alt="" class="hero-beans" aria-hidden="true">
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <ul class="features">
+      <li><span class="ico">☕</span><h3>Aparati za kafu</h3><p>Espresso, kapućino, latte, čaj i topla čokolada — Lavazza ili Covim kafa.</p></li>
+      <li><span class="ico">🥤</span><h3>Hladni napici i grickalice</h3><p>Kombinovani aparati sa širokim i prilagodljivim asortimanom.</p></li>
+      <li><span class="ico">🔄</span><h3>Redovna dopuna</h3><p>Mi brinemo da aparati uvek budu puni proizvoda koje vaši ljudi vole.</p></li>
+      <li><span class="ico">🛠️</span><h3>Servis 24/7</h3><p>Novi, redovno servisirani aparati i brzo otklanjanje kvarova.</p></li>
+    </ul>
+  </div>
+
+  <div class="wrap clients">
+    <p class="clients-title">Naši aparati su već kod njih</p>
+    <div class="clients-row">
+      <img src="img/klijent-flowninja.png" alt="Flow Ninja">
+      <img src="img/klijent-bmm.png" alt="BMM Logistics">
+      <img src="img/klijent-falc.png" alt="FALC">
+      <img src="img/klijent-neimar.png" alt="GTŠ Neimar Niš">
+      <img src="img/klijent-gimnazija.png" alt="Gimnazija Svetozar Marković">
+    </div>
+  </div>
+
+  <div class="inquiry-band" id="upit">
+    <div class="wrap inquiry-grid">
+      <div class="inquiry-copy">
+        <p class="eyebrow">Upit</p>
+        <h2>Želite aparat u svom prostoru?</h2>
+        <p>Ostavite nam svoje podatke i pitanje — javićemo vam se u najkraćem roku sa predlogom aparata i asortimana.</p>
+        <ul class="ticks">
+          <li>Postavljanje bez komplikacija</li>
+          <li>Asortiman birate vi ili mi predložimo najtraženije</li>
+          <li>Plaćanje novcem, tagovima ili mobilnom aplikacijom</li>
+        </ul>
+      </div>
+
+      <!-- Upitnik se šalje u Google Formu (podesite FORM_CONFIG u script.js) -->
+      <form class="card form" id="inquiry-form" novalidate>
+        <div class="field">
+          <label for="f-ime">Ime i prezime *</label>
+          <input id="f-ime" name="ime" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-email">Email *</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="f-telefon">Broj telefona *</label>
+          <input id="f-telefon" name="telefon" type="tel" autocomplete="tel" placeholder="06x/xxx-xxxx" required>
+        </div>
+        <div class="field">
+          <label for="f-poruka">Poruka / pitanje *</label>
+          <textarea id="f-poruka" name="poruka" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Pošalji upit</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O NAMA ============ -->
+<section class="panel" id="o-nama" role="tabpanel" hidden>
+  <div class="wrap page">
+    <div class="page-head">
+      <p class="eyebrow">O nama</p>
+      <h1>Lokalna vending kompanija iz Niša</h1>
+    </div>
+    <div class="about-grid">
+      <div class="prose">
+        <p>Naša kompanija uspešno posluje na teritoriji grada Niša poslednjih godina. Naši aparati postavljeni su na raznim lokacijama u gradu, od škola, teretana, do raznih kompanija i organizacija.</p>
+        <p>Nudimo aparate za tople i hladne napitke i grickalice, kao i same proizvode koji bi bili u ponudi aparata. Asortiman proizvoda možete odabrati vi, ili vam možemo ponuditi najtraženije proizvode na početku poslovanja — što se u daljem radu, naravno, može korigovati.</p>
+        <p>Naplata na aparatu se može realizovati papirnim novcem, tagovima ili mobilnom aplikacijom. Svi aparati su novije proizvodnje i redovno servisirani. Mi smo zaduženi za otklanjanje bilo kakvih kvarova u najkraćem mogućem roku, a stojimo vam na raspolaganju 24/7 za bilo kakav problem sa korišćenjem naših aparata.</p>
+        <p><a href="#kontakt" data-tab="kontakt" class="link">Kontaktirajte nas za bilo kakva pitanja →</a></p>
+      </div>
+      <aside class="card about-card">
+        <img src="img/logo.png" alt="" class="about-logo">
+        <ul class="facts">
+          <li><b>Lokacija</b><span>Niš</span></li>
+          <li><b>Plaćanje</b><span>Novac · tagovi · mobilna aplikacija</span></li>
+          <li><b>Podrška</b><span>24/7</span></li>
+          <li><b>Kafa</b><span>Lavazza ili Covim</span></li>
+        </ul>
+      </aside>
+    </div>
+
+    <h2 class="section-title">Zašto vending aparat u vašem prostoru?</h2>
+    <div class="benefits">
+      <div class="card">
+        <h3>Za kompaniju</h3>
+        <ul>
+          <li><b>Povećava produktivnost</b> — zaposleni ne moraju napuštati radno mesto da bi kupili kafu, užinu ili osveženje.</li>
+          <li><b>Smanjuje troškove</b> — povoljnije rešenje od kafeterije ili kantine, bez potrebe za dodatnim osobljem.</li>
+          <li><b>Unapređuje radnu atmosferu</b> — dostupnost hrane i pića doprinosi zadovoljstvu i radnom moralu.</li>
+          <li><b>Dostupnost 24/7</b> — idealno za firme sa smenama ili one koje rade non-stop.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Za zaposlene</h3>
+        <ul>
+          <li><b>Brzo osveženje</b> — bez čekanja u redovima ili odlaska do prodavnice.</li>
+          <li><b>Širok izbor</b> — od kafe i čajeva do grickalica i zdravih opcija.</li>
+          <li><b>Ušteda novca</b> — cene su često povoljnije od kafića i prodavnica u blizini.</li>
+          <li><b>Ušteda vremena</b> — kratke pauze bez dugih odlazaka van kompanije.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-title">Klijenti o nama</h2>
+    <div class="quotes">
+      <figure class="card quote">
+        <blockquote>„Saradnjom sa Vending<span class="num">018</span> smo više nego zadovoljni! Brzina, efikasnost i otvorenost za predloge su za svaku pohvalu — pravo osveženje!”</blockquote>
+        <figcaption><b>Petra Nikolić</b> · Executive Assistant, Flow Ninja</figcaption>
+      </figure>
+      <figure class="card quote">
+        <blockquote>„Saradnja sa Vending<span class="num">018</span> je vrlo laka i produktivna. Proces instalacije kafe aparata u našoj teretani je bio brz, a podrška kompanije nam je uvek dostupna. Sve preporuke!”</blockquote>
+        <figcaption><b>Milovan Dragojević</b> · vlasnik teretane</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KAFE APARATI ============ -->
+<section class="panel" id="kafe-aparati" role="tabpanel" hidden>
+  <div class="wrap page">
+    <div class="page-head">
+      <p class="eyebrow">Kafe aparati</p>
+      <h1>Aparati za kafu i tople napitke</h1>
+      <p class="lead">Profesionalni samouslužni aparati sa kafom po vašem izboru — <b>Lavazza</b> ili <b>Covim</b>. Mi ih postavljamo, dopunjavamo i servisiramo.</p>
+    </div>
+
+    <div class="machines">
+      <figure class="card machine">
+        <div class="machine-img"><img src="img/kafe-canto.jpg" alt="Samostojeći aparat za kafu"></div>
+        <figcaption>
+          <h3>Samostojeći aparat</h3>
+          <p>Veliki kapacitet i ceo meni toplih napitaka — za kompanije, škole i prostore sa mnogo korisnika.</p>
+        </figcaption>
+      </figure>
+      <figure class="card machine">
+        <div class="machine-img"><img src="img/kafe-krea.jpg" alt="Stoni aparat za kafu"></div>
+        <figcaption>
+          <h3>Stoni aparat</h3>
+          <p>Kompaktno rešenje za manje kancelarije, teretane i čekaonice.</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <h2 class="section-title">Ponuda toplih napitaka</h2>
+    <ul class="menu">
+      <li>Espresso kratki</li><li>Espresso duži</li><li>Espresso duži sa mlekom</li>
+      <li>Kapućino</li><li>Kapućino sa čokoladom</li><li>Mokaćino</li>
+      <li>Latte</li><li>Mleko</li><li>Topla čokolada</li>
+      <li>Nes kafa</li><li>Nes kafa duža</li><li>Nes kapućino</li>
+      <li>Nes sa mlekom</li><li>Irska kafa</li><li>Čaj</li>
+    </ul>
+
+    <div class="cta card">
+      <div>
+        <h3>Kafe aparat za vaš prostor?</h3>
+        <p>Pošaljite upit i predložićemo model i asortiman koji vam odgovara.</p>
+      </div>
+      <a href="#upit" class="btn btn-primary">Pošaljite upit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VENDING APARATI ============ -->
+<section class="panel" id="vending-aparati" role="tabpanel" hidden>
+  <div class="wrap page">
+    <div class="page-head">
+      <p class="eyebrow">Vending aparati</p>
+      <h1>Hladni napici i grickalice</h1>
+      <p class="lead">Kombinovani aparati za hladne napitke i grickalice — kvalitetni proizvodi po tržišnim cenama, uz servis i dopunjavanje 24/7.</p>
+    </div>
+
+    <div class="split">
+      <img src="img/hero.jpg" alt="Vending aparat sa grickalicama" class="split-img">
+      <div class="prose">
+        <h2>Kako funkcioniše saradnja</h2>
+        <ol class="steps">
+          <li><b>Upit i obilazak</b> — dogovaramo lokaciju i tip aparata koji odgovara vašem prostoru.</li>
+          <li><b>Izbor asortimana</b> — birate proizvode vi, ili mi predložimo najtraženije za početak.</li>
+          <li><b>Postavljanje</b> — dovozimo i postavljamo nov, servisiran aparat.</li>
+          <li><b>Dopuna i servis</b> — redovno dopunjavamo aparat i otklanjamo kvarove u najkraćem roku.</li>
+        </ol>
+      </div>
+    </div>
+
+    <ul class="features features-3">
+      <li><span class="ico">💳</span><h3>Više načina plaćanja</h3><p>Papirni novac, tagovi ili mobilna aplikacija.</p></li>
+      <li><span class="ico">🏢</span><h3>Za razne prostore</h3><p>Kompanije, škole, teretane i organizacije.</p></li>
+      <li><span class="ico">⚙️</span><h3>Prilagodljiv asortiman</h3><p>Ponudu menjamo prema onome što se najviše traži.</p></li>
+    </ul>
+
+    <div class="cta card">
+      <div>
+        <h3>Vending aparat za vaš prostor?</h3>
+        <p>Javite nam se — odgovaramo brzo.</p>
+      </div>
+      <a href="#upit" class="btn btn-primary">Pošaljite upit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section class="panel" id="kontakt" role="tabpanel" hidden>
+  <div class="wrap page">
+    <div class="page-head">
+      <p class="eyebrow">Kontakt</p>
+      <h1>Tu smo za vas 24/7</h1>
+      <p class="lead">Pozovite nas, pišite nam ili pošaljite upit preko forme na početnoj strani.</p>
+    </div>
+    <div class="contact-grid">
+      <a class="card contact" href="tel:+381611181580">
+        <span class="ico">📞</span><h3>Telefon</h3><p>061/118-1580</p>
+      </a>
+      <a class="card contact" href="mailto:vendingaparati018@gmail.com">
+        <span class="ico">✉️</span><h3>Email</h3><p>vendingaparati018@gmail.com</p>
+      </a>
+      <div class="card contact">
+        <span class="ico">📍</span><h3>Lokacija</h3><p>Niš, Srbija</p>
+      </div>
+    </div>
+    <div class="cta card">
+      <div>
+        <h3>Imate pitanje?</h3>
+        <p>Popunite kratak upitnik i javićemo vam se.</p>
+      </div>
+      <a href="#upit" class="btn btn-primary">Otvori upitnik</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="img/logo.png" alt="" class="footer-logo">
+      <div>
+        <b>VendingAparati018</b>
+        <p>Samouslužni aparati za kafu, tople i hladne napitke i grickalice · Niš</p>
+      </div>
+    </div>
+    <div class="footer-contact">
+      <a href="tel:+381611181580">061/118-1580</a>
+      <a href="mailto:vendingaparati018@gmail.com">vendingaparati018@gmail.com</a>
+    </div>
+  </div>
+  <p class="wrap copy">© <span id="year"></span> VendingAparati018. Sva prava zadržana.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
